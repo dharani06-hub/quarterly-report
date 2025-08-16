@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Quarterly Earnings Report</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="dist/reset.css">
+    <link rel="stylesheet" href="dist/reveal.css">
+    <link rel="stylesheet" href="dist/theme/black.css" id="theme">
+    <link rel="stylesheet" href="plugin/highlight/monokai.css">
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+
+            <section>
+                <h1><span class="fragment fade-in">Quarterly Earnings Report</span></h1>
+                <h3><span class="fragment fade-in">Q3 2025</span></h3>
+                <p><small class="fragment fade-in">Your Name, Technical Consultant</small></p>
+                <p><small class="fragment fade-in">Email: 23f3003771@ds.study.iitm.ac.in</small></p>
+                <aside class="notes">
+                    <h3>Speaker Notes for Title Slide</h3>
+                    <p>Welcome everyone to the Q3 2025 earnings report. We'll be covering our financial performance and strategic initiatives.</p>
+                </aside>
+            </section>
+
+            <section data-markdown>
+                <textarea data-template>
+                    ### Key Highlights
+                    -   **Strong Revenue Growth:** Revenue increased by 15% year-over-year.
+                    -   **Profitability:** Net income saw a 10% rise, exceeding market expectations.
+                    -   **Strategic Investments:** Significant capital was allocated to new tech initiatives.
+                    -   **Future Outlook:** We project continued growth driven by our expansion into new markets.
+                </textarea>
+                <aside class="notes">
+                    <h3>Speaker Notes for Highlights</h3>
+                    <p>Our strong performance this quarter is a testament to our team's hard work and our strategic focus on innovation and market expansion.</p>
+                </aside>
+            </section>
+
+            <section>
+                <h2>Key Financial Metrics</h2>
+                <p>We'll analyze the **Return on Equity (ROE)**, a measure of profitability.</p>
+                $$ \text{ROE} = \frac{\text{Net Income}}{\text{Shareholder's Equity}} $$
+                <aside class="notes">
+                    <h3>Speaker Notes for Financials</h3>
+                    <p>ROE is a critical indicator for investors, showing how effectively we're using shareholder investments to generate profits.</p>
+                </aside>
+            </section>
+
+            <section>
+                <h2>Mitigating Technical Debt</h2>
+                <p>We've implemented a new tool to identify and address deprecated code automatically.</p>
+                <pre><code data-trim data-noescape>
+// Script to identify deprecated functions
+function findDeprecatedCode(projectFiles) {
+  const deprecatedKeywords = ['legacyFunction', 'oldAPI', 'deprecated'];
+  const issues = [];
+  for (const file of projectFiles) {
+    for (const line of file.content.split('\n')) {
+      if (deprecatedKeywords.some(keyword => line.includes(keyword))) {
+        issues.push({ file: file.name, line: line });
+      }
+    }
+  }
+  return issues;
+}
+                </code></pre>
+                <aside class="notes">
+                    <h3>Speaker Notes for Technical Debt</h3>
+                    <p>This automated approach helps us maintain a clean codebase, reducing future maintenance costs and development time.</p>
+                </aside>
+            </section>
+
+        </div>
+    </div>
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script src="plugin/math/math.js"></script>
+    <script>
+        Reveal.initialize({
+            hash: true,
+            plugins: [ RevealMarkdown, RevealNotes, RevealHighlight, RevealMath ]
+        });
+    </script>
+</body>
+</html>
